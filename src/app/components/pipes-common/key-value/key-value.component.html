@@ -1,0 +1,7 @@
+<p>Original: {{data}}</p>
+<p *ngFor="let prop of data | keyvalue">
+    {{prop | json}}
+</p>
+<p *ngFor="let prop of data | keyvalue">
+    {{prop.key}}: {{prop.value}}
+</p>
